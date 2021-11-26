@@ -1,6 +1,6 @@
 {
-  "name": "json-schema-to-typescript",
-  "version": "10.1.5",
+  "name": "refless-json-schema-to-typescript",
+  "version": "0.0.0",
   "description": "compile json schema to typescript typings",
   "main": "dist/src/index.js",
   "bin": {
@@ -19,7 +19,6 @@
     "tdd": "concurrently -r -p '' -k 'npm run watch' 'npm run watch:test'",
     "test": "ava --timeout=300s --verbose",
     "stresstest": "seq 1 10 | xargs -I{} npm test",
-    "prepublishOnly": "npm test",
     "pretest": "npm run clean && npm run build:server",
     "watch": "tsc -w",
     "watch:test": "ava -w"
